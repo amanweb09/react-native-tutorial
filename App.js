@@ -3,6 +3,7 @@ import CustomComponent from './src/screens/CustomComponents'
 import FlatListDemo from './src/screens/FlatList'
 import { View, Text } from 'react-native'
 import NetflixChallenge from './src/screens/NetflixChallenge'
+import ImagesFile from './src/screens/Images'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <CustomComponent />
       <FlatListDemo />
       <NetflixChallenge />
+      <ImagesFile />
 
     </View>
   )
