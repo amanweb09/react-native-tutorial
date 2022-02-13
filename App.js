@@ -5,6 +5,7 @@ import { View, Text } from 'react-native'
 import NetflixChallenge from './src/screens/NetflixChallenge'
 import ImagesFile from './src/screens/Images'
 import Buttons from './src/screens/Buttons'
+import TouchableOpacityInReactNative from './src/screens/TouchableOpacityInReactNative'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <NetflixChallenge />
       <ImagesFile />
       <Buttons />
+      <TouchableOpacityInReactNative />
     </View>
   )
 }
