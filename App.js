@@ -7,6 +7,7 @@ import ImagesFile from './src/screens/Images'
 import Buttons from './src/screens/Buttons'
 import TouchableOpacityInReactNative from './src/screens/TouchableOpacityInReactNative'
 import LinkingInReactNative from './src/screens/LinkingInReactNative'
+import MultipleStyles from './src/screens/MultipleStyles'
 
 const App = () => {
   {/* View is div in react native */}
@@ -21,6 +22,7 @@ const App = () => {
       <Buttons />
       <TouchableOpacityInReactNative />
       <LinkingInReactNative />
+      <MultipleStyles />
     </View>
   )
 }
