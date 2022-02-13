@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, StyleSheet, FlatList } from 'react-native'
+import { View, Text, StyleSheet, FlatList } from 'react-native'
 
 const FlatListDemo = () => {
     const names = [
@@ -15,6 +15,15 @@ const FlatListDemo = () => {
         {
             name: "munna tripathi"
         },
+        {
+            name: "beena tripathi"
+        },
+        {
+            name: "akhandand tripathi"
+        },
+        {
+            name: "golu gupta"
+        },
     ]
 
     return (
@@ -22,27 +31,48 @@ const FlatListDemo = () => {
         //data represents the array to be mapped
         //renderItem is the function that we pass inside the map function
 
-        <FlatList data={names} renderItem={(name) => {
+        <FlatList
+            data={names}
+            horizontal={true}       //if we want to that our list should scroll in a horizontal direction (like netflix app)
+            showsHorizontalScrollIndicator={false}      //for hiding/showing scrollbar
+            inverted={true}     //reverse the order of the array in the list
+            renderItem={(name) => {
 
-            //structure of data 
-            // {
-            //     index: [index], 
-            //     item: {obj1, obj2,...}, 
-            //     separators: {..}
-            // }
+                //structure of data 
+                // {
+                //     index: [index], 
+                //     item: {obj1, obj2,...}, 
+                //     separators: {..}
+                // }
 
-            return (
-                <Text key={name.item.name} style={styles.textStyle}>{name.item.name}</Text>
-            )
-        }} />
+                return (
+                    <View style={styles.listStyle}>
+                        <Text
+                            key={name.item.name}
+                            style={styles.textStyle}>
+                            {name.item.name}
+                        </Text>
+                    </View>
+                )
+            }} />
     )
 }
 
 const styles = StyleSheet.create({
     textStyle: {
-        fontSize: 30,
+        fontSize: 15,
         fontWeight: 'bold',
-        margin: '1rem'
+        margin: '1rem',
+        color: "white",
+    },
+    listStyle: {
+        width: 200,
+        height: 75,
+        backgroundColor: "red",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        margin: 20, 
     }
 })
 
