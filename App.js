@@ -8,6 +8,8 @@ import Buttons from './src/screens/Buttons'
 import TouchableOpacityInReactNative from './src/screens/TouchableOpacityInReactNative'
 import LinkingInReactNative from './src/screens/LinkingInReactNative'
 import MultipleStyles from './src/screens/MultipleStyles'
+import FlexboxReactNative from './src/screens/FlexboxReactNative'
+import Counter from './src/screens/Counter'
 
 const App = () => {
   {/* View is div in react native */}
@@ -23,6 +25,8 @@ const App = () => {
       <TouchableOpacityInReactNative />
       <LinkingInReactNative />
       <MultipleStyles />
+      <FlexboxReactNative />
+      <Counter />
     </View>
   )
 }
