@@ -6,6 +6,7 @@ import NetflixChallenge from './src/screens/NetflixChallenge'
 import ImagesFile from './src/screens/Images'
 import Buttons from './src/screens/Buttons'
 import TouchableOpacityInReactNative from './src/screens/TouchableOpacityInReactNative'
+import LinkingInReactNative from './src/screens/LinkingInReactNative'
 
 const App = () => {
   {/* View is div in react native */}
@@ -19,6 +20,7 @@ const App = () => {
       <ImagesFile />
       <Buttons />
       <TouchableOpacityInReactNative />
+      <LinkingInReactNative />
     </View>
   )
 }
