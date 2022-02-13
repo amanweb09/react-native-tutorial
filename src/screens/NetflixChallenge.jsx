@@ -39,14 +39,17 @@ const NetflixChallenge = () => {
             <Text style={styles.heading}>Top 10 Netflix Shows</Text>
 
             <FlatList
+                keyExtractor={(key) => {
+                    return key.title
+                }}
                 horizontal
                 data={shows}
                 showsHorizontalScrollIndicator={false}
                 renderItem={(show) => {
                     return (
                         <View
-                            style={styles.boxStyle}
-                            key={show.item.title}>
+                            style={styles.boxStyle}>
+
                             <Text style={styles.title}>{show.item.title}</Text>
                             <Text style={styles.subText}>{show.item.year}</Text>
                             <Text style={styles.subText}>{show.item.genre}</Text>

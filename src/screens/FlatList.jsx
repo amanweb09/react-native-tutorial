@@ -32,6 +32,9 @@ const FlatListDemo = () => {
         //renderItem is the function that we pass inside the map function
 
         <FlatList
+            keyExtractor={(key) => {
+                return key.name
+            }}
             data={names}
             horizontal={true}       //if we want to that our list should scroll in a horizontal direction (like netflix app)
             showsHorizontalScrollIndicator={false}      //for hiding/showing scrollbar
@@ -47,7 +50,6 @@ const FlatListDemo = () => {
 
                 return (
                     <View
-                        key={name.item.name}
                         style={styles.listStyle}>
                         <Text
                             style={styles.textStyle}>
@@ -63,7 +65,7 @@ const styles = StyleSheet.create({
     textStyle: {
         fontSize: 15,
         fontWeight: 'bold',
-        margin: '1rem',
+        margin: 16,
         color: "white",
     },
     listStyle: {
