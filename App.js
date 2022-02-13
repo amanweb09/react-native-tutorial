@@ -4,6 +4,7 @@ import FlatListDemo from './src/screens/FlatList'
 import { View, Text } from 'react-native'
 import NetflixChallenge from './src/screens/NetflixChallenge'
 import ImagesFile from './src/screens/Images'
+import Buttons from './src/screens/Buttons'
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
       <FlatListDemo />
       <NetflixChallenge />
       <ImagesFile />
-
+      <Buttons />
     </View>
   )
 }

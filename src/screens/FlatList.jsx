@@ -46,9 +46,10 @@ const FlatListDemo = () => {
                 // }
 
                 return (
-                    <View style={styles.listStyle}>
+                    <View
+                        key={name.item.name}
+                        style={styles.listStyle}>
                         <Text
-                            key={name.item.name}
                             style={styles.textStyle}>
                             {name.item.name}
                         </Text>
@@ -72,7 +73,7 @@ const styles = StyleSheet.create({
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        margin: 20, 
+        margin: 20,
     }
 })
 
