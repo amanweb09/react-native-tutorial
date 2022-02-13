@@ -8,8 +8,9 @@ import Buttons from './src/screens/Buttons'
 import TouchableOpacityInReactNative from './src/screens/TouchableOpacityInReactNative'
 
 const App = () => {
+  {/* View is div in react native */}
   return (
-    <View>    {/* View is div in react native */}
+    <View>    
 
       <Text>Hello from app</Text>
       <CustomComponent />

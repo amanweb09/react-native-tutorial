@@ -43,12 +43,16 @@ const NetflixChallenge = () => {
                 data={shows}
                 showsHorizontalScrollIndicator={false}
                 renderItem={(show) => {
-                    return <View style={styles.boxStyle} key={show.item.title}>
-                        <Text style={styles.title}>{show.item.title}</Text>
-                        <Text style={styles.subText}>{show.item.year}</Text>
-                        <Text style={styles.subText}>{show.item.genre}</Text>
+                    return (
+                        <View
+                            style={styles.boxStyle}
+                            key={show.item.title}>
+                            <Text style={styles.title}>{show.item.title}</Text>
+                            <Text style={styles.subText}>{show.item.year}</Text>
+                            <Text style={styles.subText}>{show.item.genre}</Text>
 
-                    </View>
+                        </View>
+                    )
                 }} />
         </View>
     )
